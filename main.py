@@ -5,7 +5,7 @@ import time
 import discord
 from discord.ext import commands
 #from dotenv import load_dotenv
-#from webserver import keep_alive
+from webserver import keep_alive
 from discord import FFmpegPCMAudio
 intents = discord.Intents.default()
 #intents.members = True
@@ -250,7 +250,7 @@ async def prejudice(ctx):
     player = voice.play(source)
   else:
     await ctx.send("hey bozo you arent in a vc")
-#keep_alive()
+keep_alive()
 
 
 client.run(TOKEN)

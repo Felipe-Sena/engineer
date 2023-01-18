@@ -13,7 +13,7 @@ intents = discord.Intents.default()
 #async def on_ready(self):
  #       print('Logged on as {0}!'.format(self.user))
 #load_dotenv()
-TOKEN = 'OTYyMTYyMDk3NjQ1NTUxNjM2.YlDhSA.sIB7eDtBjaLEP46Gd1u6Fq5bjVE'
+TOKEN = os.environ.get('TOKEN')
 
 client = commands.Bot(command_prefix = "-", intents=intents)
 
